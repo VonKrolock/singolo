@@ -16,11 +16,11 @@
         <h1 class="logo">SINGOLO<span>*</span></h1>
       <nav class="nav">
             <ul class="menu">
-                <li><a class="active" href="#">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#about-us">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="menu-item active"><a href="#">Home</a></li>
+                <li class="menu-item"><a href="#services">Services</a></li>
+                <li class="menu-item"><a href="#portfolio">Portfolio</a></li>
+                <li class="menu-item"><a href="#about-us">About</a></li>
+                <li class="menu-item"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </div>
@@ -29,10 +29,19 @@
 <main class="main">
   <section class="slider">
       <div class="slider-content">
-          <button class="btn btn-left"></button>
-          <img class="phone-vertical" src="./assets/images/iPhone_vertical.png" alt="Phone" />
-          <img class="phone-horizontal" src="./assets/images/iPhone_horizontal.png" alt="Phone" />
-          <button class="btn btn-right"></button>
+        <div class="slide">
+          <img class="phone-vertical" src="./assets/images/iPhone_vertical.png" alt="PhoneOne" />
+          <div class="layer-vertical"></div>
+          <div class="layer-horizontal"></div>
+          <img class="phone-horizontal" src="./assets/images/iPhone_horizontal.png" alt="PhoneTwo" />
+        </div>
+
+        <div class="slide">
+          <img class="phone-vertical-two" src="./assets/images/iPhone_vertical_four.png" alt="PhoneThree"/>
+          <img class="phone-horizontal-two" src="./assets/images/iPhone_horizontal_three.png" alt="PhoneFour"/>
+        </div>
+          <button class="btn btn-right" onclick="plusSlides(-1, 0)"></button>
+          <button class="btn btn-left" onclick="plusSlides(1, 0)"></button>
       </div>
     </section>
 
@@ -83,26 +92,26 @@
       <h2 class="content-name">Portfolio</h2>
       <p class="content-text">Duis mollis, est non commodo luctus, nisi eratporttitor ligula, eget lacinia odio sem nec elit.</p>
       <div class="button-menu">
-        <ul>
-          <li><a class="active" href="#">All</a></li>
-          <li><a href="#">Web Design</a></li>
-          <li><a href="#">Graphic Design</a></li>
-          <li><a href="#">Artwork</a></li>
+        <ul class="menu-two">
+          <li class="menu-two-item two"><a href="#portfolio">All</a></li>
+          <li class="menu-two-item"><a href="#portfolio">Web Design</a></li>
+          <li class="menu-two-item"><a href="#portfolio">Graphic Design</a></li>
+          <li class="menu-two-item"><a href="#portfolio">Artwork</a></li>
        </ul>
       </div>
       <div class="images">
-        <img src="./assets/images2/1.jpg" alt="Artwork_1">
-        <img src="./assets/images2/2.jpg" alt="Artwork_2">
-        <img src="./assets/images2/3.jpg" alt="Artwork_3">
-        <img src="./assets/images2/4.jpg" alt="Artwork_4">
-        <img src="./assets/images2/5.jpg" alt="Artwork_5">
-        <img src="./assets/images2/6.jpg" alt="Artwork_6">
-        <img src="./assets/images2/7.jpg" alt="Artwork_7">
-        <img src="./assets/images2/8.jpg" alt="Artwork_8">
-        <img src="./assets/images2/9.jpg" alt="Artwork_9">
-        <img src="./assets/images2/10.jpg" alt="Artwork_10">
-        <img src="./assets/images2/11.jpg" alt="Artwork_11">
-        <img src="./assets/images2/12.jpg" alt="Artwork_12">
+        <img class="image" src="./assets/images2/1.jpg" alt="Artwork_1">
+        <img class="image" src="./assets/images2/2.jpg" alt="Artwork_2">
+        <img class="image" src="./assets/images2/3.jpg" alt="Artwork_3">
+        <img class="image" src="./assets/images2/4.jpg" alt="Artwork_4">
+        <img class="image" src="./assets/images2/5.jpg" alt="Artwork_5">
+        <img class="image" src="./assets/images2/6.jpg" alt="Artwork_6">
+        <img class="image" src="./assets/images2/7.jpg" alt="Artwork_7">
+        <img class="image" src="./assets/images2/8.jpg" alt="Artwork_8">
+        <img class="image" src="./assets/images2/9.jpg" alt="Artwork_9">
+        <img class="image" src="./assets/images2/10.jpg" alt="Artwork_10">
+        <img class="image" src="./assets/images2/11.jpg" alt="Artwork_11">
+        <img class="image" src="./assets/images2/12.jpg" alt="Artwork_12">
       </div>
   </div>
   </section>
@@ -162,12 +171,22 @@
             <p class="section-three-text">Fusce dapibus, tellus ac cursus dolor sit, amet consectetur adipisicing elit. Odit corporis nemo rem sint ducimus soluta nece deleniti iure deserunt, officiis quidem iusto alias animi eligendi nihil quasi explicabo veniam.</p>
         </div>
         <div class="form-info-content">
-        <form class="form">
-            <input type="text" placeholder="Name (Required)" required>
-            <input type="email" placeholder="Email (Required)" required>
-            <input type="text" placeholder="Subject">
-            <textarea name="info" style="height:200px" placeholder="Describe your project in detail..."></textarea>
-            <input type="submit" value="Submit">
+        <form class="form" id="form">
+            <input type="text" placeholder="Name (Required)" id="name" required>
+            <input type="email" placeholder="Email (Required)" id="email" required>
+            <input type="text" placeholder="Subject" id="subject">
+            <textarea name="info" style="height:200px" id="description" placeholder="Describe your project in detail..."></textarea>
+            <input type="submit" id="btn" value="Submit">
+            <div id="message-block" class="hidden">
+              <div id="message">
+                <p>Письсо отправлено <br>
+                   Тема: <span id="result"></span><br>
+                   Описание: <span id="result-two"></span>
+                </p>
+                <br>
+                <button id="close-btn">OK</button>
+             </div>
+            </div>
         </form>
         <div class="sectio-three-contact-info">
             <h3 class="section-three-info-name">Contact information</h3>
@@ -193,5 +212,6 @@
         </div>
    </div>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>
