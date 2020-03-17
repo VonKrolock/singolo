@@ -1,7 +1,30 @@
+html{
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   padding: 0;
   font-family: Lato, sans-serif;
+  width: 100%;
+}
+
+.header {
+  margin: 0 auto;
+  min-width: 1200px;
+  height: 89px;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: #2d303a;
+  box-shadow: 0 6px 0 0 rgba(50,55,70,1);
+  
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  height: 100%;
+  margin: 0 auto;
 }
 .logo {
   width: 140px;
@@ -12,25 +35,19 @@ body {
   color: #fff;
   padding-top: 18px;
 }
-
+.icon{
+  display: none;
+  color: white;
+  position: absolute;
+  left: 50px;
+  top: 22px;
+ 
+}
 li.active a {
   color: #f06c64;
 }
 span{
   color: #f06c64;
-}
-.header {
-  width: 100%;
-  height: 89px;
-  background-color: #2d303a;
-  box-shadow: 0 6px 0 0 rgba(50,55,70,1);
-}
-.container {
-  display: flex;
-  justify-content: space-between;
-  width: 940px;
-  height: 100%;
-  margin: 0 auto;
 }
 .nav {
   width: 380px;
@@ -64,7 +81,7 @@ span{
   color: #f06c64;
 }
 .main {
-  width: 100%;
+  min-width: 1200px;
   margin-top: 6px;
 }
 .slider {
@@ -79,6 +96,8 @@ span{
   height: 100%;
   margin: 0 auto;
   padding: 0 40px;
+  
+  
 }
 .phone-vertical {
   position: absolute;
@@ -188,6 +207,7 @@ span{
   text-align: justify;
   color: #666d89;
   letter-spacing: -0.013rem;
+  
 }
 
 .services-list {
@@ -529,12 +549,13 @@ input, textarea {
   opacity: 0.5;
 }
 .footer{
-  width: 100%;
+  min-width: 1200px;
   height: 76px;
   margin-top: 3px;
   background-color: #2d303a;
   color: #767e9e;
   font-size: 12px;
+  <
 }
 .footer-content{
   display: flex;
