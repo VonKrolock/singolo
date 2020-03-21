@@ -85,31 +85,23 @@ phoneVertical.addEventListener('click',() => layerVertical.style.display = layer
 phoneHorizontal.addEventListener('click',() => layerHorizontal.style.display = layerHorizontal.style.display!='block' ? 'block' : 'none');
 
  // Caroussel
-
 var slideIndex = [1,1];
-var slideId = ["slide"]
-showSlides(1, 0);
-showSlides(1, 1);
+var slideId = ["slide"];
 
-function plusSlides(n, no) {
-  showSlides(slideIndex[no] += n, no);
+function plusSlides(a, b) {
+  showSlides(slideIndex[b] += a, b);
 }
-
-function showSlides(n, no) {
-  var i;
-  var x = document.getElementsByClassName(slideId[no]);
-  if (n > x.length) {slideIndex[no] = 1}    
-  if (n < 1) {slideIndex[no] = x.length}
-  for (i = 0; i < x.length; i++) {
+function showSlides(a, b) {
+  var x = document.getElementsByClassName(slideId[b]);
+  if (a > x.length) {slideIndex[b] = 1}    
+  if (a < 1) {slideIndex[b] = x.length}
+  for (let i = 0; i < x.length; i++) {
      x[i].style.display = "none";  
   }
-  x[slideIndex[no]-1].style.display = "block";  
-}
+  x[slideIndex[b]-1].style.display = "block"; 
+} 
+showSlides(1, 0);
 
-
-
-  
-  
 
 
 

@@ -1,0 +1,371 @@
+
+@media(min-width:320px) and (max-width:500px) {
+  
+  .header{
+  min-width: 375px;
+  height: 100px;
+  padding:0;
+  margin-top: -6px;
+ }
+  .container {
+   flex-direction: column;
+   align-items: center;
+   max-width: 375px;
+  }
+  .nav{
+    height: 100%;
+    top: 40px;
+    left: 0;
+    visibility: hidden;
+  }
+  .menu li:not(:first-child)::before {
+    content: "";
+  }
+  .menu{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+    position: fixed;
+    text-align:justify;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color:#2d303a;
+  }
+  .menu li{
+    width: 70px;
+  }
+  .menu li a{
+    font-size: 22px;
+  }
+  .toggler,.hamburger{
+    visibility: visible;
+  }
+  .toggler:checked ~ .nav {
+    visibility: visible;
+  }
+  .menu-item{
+    font-weight: 900;
+    line-height: 2;
+    margin-top: -25px;
+    margin-right: 50px;
+  }
+  .logo{
+    text-align: center;
+  }
+  .phone-vertical {
+    position: absolute;
+    top: 60px;
+    left: 63px;
+    width: 70px;
+    height: 160px;
+  }
+  .phone-vertical-two{
+    position: absolute;
+    top: 60px;
+    left: 63px;
+    width: 70px;
+    height: 160px;
+    
+  }
+  .phone-horizontal {
+  position: absolute;
+  top: 120px;
+  right: 75px;
+  width: 160px;
+  height: 70px;
+  }
+  .phone-horizontal-two {
+    position: absolute;
+    top: 120px;
+    right: 75px;
+    width: 160px;
+    height: 70px;
+  }
+  .layer-vertical{
+    position: absolute;
+    top: 80px;
+    left: 67px;
+    width: 55px;
+    height: 115px;
+  }
+  .layer-horizontal{
+    position: absolute;
+    top: 124px;
+    right: 105px;
+    width: 115px;
+    height: 55px;
+  }
+ .slider{
+  height: 250px;
+  }
+ .btn {
+  position: absolute;
+  top: 125px;
+  width: 16px;
+  height: 27px;
+  }
+  .btn-left{
+    margin-left: -22px;
+  }
+  .services-content,.slider-content,.services-content p{
+    max-width: 300px;
+  }
+  .services{
+    height: 1050px;
+  }
+  .services-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .services-list > .services-item{
+    margin: 5px;
+  }
+  .pen,.phone,.lamp,.heart,.star,.bubble {
+    position: absolute;
+    top: 15px;
+    left: 1px;
+  }
+  .item-name {
+    position: absolute;
+    top: 15px;
+    text-align: justify;
+    left:90px;
+  }
+  .item-description{
+    width: 200px;
+    padding-top: 10px;
+    text-align: center;
+    left:90px;
+  }
+  .main{
+    min-width: 375px;
+  }
+  .section-main{
+      height: 1170px;
+  }
+  .section-secondary{
+      height: 1700px;
+  }
+  .section-secondary-content,.section-three-container{
+    text-align: center;
+    max-width: 300px;
+  }
+  .secondary-name,.secondary-text,.section-three-header{
+    text-align: start;
+    text-align: justify;
+  }
+  .section-main-content,.content-text,.secondary-text,.section-three-text{
+    max-width: 300px;
+  }
+  .form > input,textarea{
+    width: 100%;
+  }
+  .section-number-three{
+    height: 1050px;
+  }
+  .images{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 5px;
+  }
+  .images > img{
+    width: 135px;
+    height: 130px;
+  }
+  .staff>img{
+    width: 300px;
+    padding-top: 20px;
+  }
+  .secondary-images{
+    display: flex;
+    flex-direction: column;
+  }
+  .staff-description {
+    text-align: justify;
+    width: 300px;
+  }
+  .staff-name{
+    text-align: justify;
+  }
+  .social-links{
+    
+    margin-top: -10px;
+  }
+  .section-three-info-name{
+    top:105%;
+    left: -65px;
+    width: 300px;
+  }
+  .section-three-info-text{
+    top: 107%;
+    width: 300px;
+  }
+  .section-three-info-icons{
+    top:135%;
+  }
+  .footer{
+    min-width: 375px;
+  }
+  .footer-content{
+    max-width: 300px;
+  }
+  .copyright{
+    margin-left: -50px;
+  }
+  .footer-social-links{
+    margin-left: 100px;
+  }
+  #message-block {
+    max-width: 300px;
+  }
+  .copyright{
+    display: none;
+  }
+}
+
+/*Tablet*/
+@media(min-width:501px) and (max-width:768px){
+  .main,.header,.footer{
+    min-width: 700px;
+  }
+  .slider{
+    height: 400px;
+  }
+  .services-content,.slider-content{
+    max-width: 650px;
+  }
+  .container{
+    margin-left: 50px;
+    max-width: 650px;
+  }
+  .phone-vertical {
+    position: absolute;
+    top: 50px;
+    left: 130px;
+    width: 150px;
+    height: 300px;
+  }
+  .phone-vertical-two{
+    position: absolute;
+    top: 50px;
+    left: 130px;
+    width: 150px;
+    height: 300px;
+    
+  }
+  .phone-horizontal {
+  position: absolute;
+  top: 120px;
+  left: 330px;
+  width: 300px;
+  height: 150px;
+  }
+  .phone-horizontal-two {
+    position: absolute;
+    top: 120px;
+    left: 330px;
+    width: 300px;
+    height: 150px;
+  }
+  .layer-vertical{
+    position: absolute;
+    top: 90px;
+    left: 138px;
+    width: 119px;
+    height: 209px;
+  }
+  .layer-horizontal{
+    position: absolute;
+  top: 128px;
+  left: 385px;
+  width: 209px;
+  height: 119px;
+  }
+  .btn {
+    position: absolute;
+    top: 180px;
+    width: 16px;
+    height: 27px;
+    }
+   
+    .services-list {
+      display: grid;
+      grid-template-columns: auto auto;
+      
+     
+    }
+    .services-list > .services-item{
+      margin: 5px;
+    }
+    .pen,.phone,.lamp,.heart,.star,.bubble {
+      position: absolute;
+      top: 15px;
+      left: 1px;
+    }
+    .services-content,.services-content p{
+      max-width: 650px;
+    }
+    .services{
+      height: 650px;
+    }
+    .section-main{
+      height: 1140px;
+  }
+  .section-secondary{
+      height: 650px;
+  }
+  .section-secondary-content,.section-three-container,.secondary-images{
+   
+    max-width: 650px;
+  }
+  
+  .section-main-content,.content-text,.secondary-text,.section-three-text{
+    max-width: 650px;
+  }
+  .images{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+  }
+  .images > img{
+    width: 200px;
+    height: 200px;
+  }
+  .staff > img{
+    width: 200px;
+    height: 200px;
+  }
+  .staff-description {
+    text-align: justify;
+    width: 200px;
+  }
+
+  .form > input,textarea{
+    width: 70%;
+  }
+  .section-number-three{
+    height: 700px;
+  }
+
+  .footer-content{
+    max-width: 650px;
+  }
+  .copyright{
+    margin-left: -50px;
+  }
+  .footer-social-links{
+    right: 1px;
+  }
+ 
+  .section-three-info-text{
+    width: 250px;
+  }
+  .section-three-contact-info{
+    padding-left: 180px;
+  }
+  }

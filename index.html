@@ -6,7 +6,8 @@
   <title>Singolo</title>
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <link rel="stylesheet" href="style.css">
- 
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="mobile.css">
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
   
@@ -14,6 +15,8 @@
 <body>
   <header class="header">
     <div class="container">
+      <input type="checkbox" class="toggler">
+      <div class="hamburger"><div></div></div>
         <h1 class="logo">SINGOLO<span>*</span></h1>
       <nav class="nav">
             <ul class="menu">
@@ -30,14 +33,14 @@
 <main class="main">
   <section class="slider">
       <div class="slider-content">
-        <div class="slide">
+        <div class="slide fade">
           <img class="phone-vertical" src="./assets/images/iPhone_vertical.png" alt="PhoneOne" />
+          <img class="phone-horizontal" src="./assets/images/iPhone_horizontal.png" alt="PhoneTwo" />
           <div class="layer-vertical"></div>
           <div class="layer-horizontal"></div>
-          <img class="phone-horizontal" src="./assets/images/iPhone_horizontal.png" alt="PhoneTwo" />
         </div>
 
-        <div class="slide">
+        <div class="slide fade">
           <img class="phone-vertical-two" src="./assets/images/iPhone_vertical_four.png" alt="PhoneThree"/>
           <img class="phone-horizontal-two" src="./assets/images/iPhone_horizontal_three.png" alt="PhoneFour"/>
         </div>
@@ -127,7 +130,7 @@
         <section class="staff">
           <img src="./assets/images2/photo_1.png" alt="Adam">
           <h3 class="staff-name staff-name-one">Adam Jensen</h3>
-          <p class="staff-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur a repellendus soluta nemo?</p>
+          <p class="staff-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur a repellendus soluta?</p>
           <div class="social-links social-links-one">
             <a href="#"><i class="fa fa-facebook fa-xs"></i></a>
             <a href="#"><i class="fa fa-google-plus fa-xs"></i></a>
@@ -189,13 +192,13 @@
              </div>
             </div>
         </form>
-        <div class="sectio-three-contact-info">
+        <div class="section-three-contact-info">
             <h3 class="section-three-info-name">Contact information</h3>
             <p class="section-three-info-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quo ex quae perspiciatis itaque inventore nulla et porro deserunt beatae amet consectetur adipisicing elit.</p>
             <ul class="section-three-info-icons">
                  <li><a href="#"><i class="fas fa-map-marker-alt"></i>Elm st. 14/05 Lost city</a></li>
-                 <li><a href="#"><i class="fas fa-phone"></i>03528 331 86 25</a></li>
-                 <li><a href="#"><i class="fas fa-envelope"></i>info@singolo.com</a></li>
+                 <li><a href="tel:+03528 331 86 35"><i class="fas fa-phone"></i>03528 331 86 25</a></li>
+                 <li><a href="mailto:info@singolo.com"><i class="fas fa-envelope"></i>info@singolo.com</a></li>
             </ul>
         </div>
     </div>
